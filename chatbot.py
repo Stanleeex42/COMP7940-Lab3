@@ -62,6 +62,15 @@ def equiped_chatgpt(update, context):
 dispatcher.add_handler(CommandHandler("add", add))
 dispatcher.add_handler(CommandHandler("help", help_command))
 
+def hello(update: Update, context: CallbackContext) -> None:
+    try:
+        msg = context.args[0]
+        update.message.reply_text('Good day, ' + msg + '!')
+    except (IndexError, ValueError):
+        update.message.reply_text('Usage: /hello <keyword>')
+
+dispatcher.add_handler(CommandHandler("hello", hello))
+
 global chatgpt
 chatgpt = HKBU_ChatGPT(config)
 chatgpt_handler = MessageHandler(Filters.text & (~Filters.command),
