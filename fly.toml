@@ -1,7 +1,6 @@
 # fly.toml app configuration file generated for chatbot-hongduan on
 2024-02-18T14:33:24+08:00
 #
-(4) Modify you Procfile with:
 # See https://fly.io/docs/reference/configuration/ for information
 about how to use this file.
 #
