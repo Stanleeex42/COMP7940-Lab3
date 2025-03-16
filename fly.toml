@@ -1,5 +1,5 @@
 app = 'comp7940-lab3-bold-wildflower-4537'
-primary_region = 'nrt'
+primary_region = 'nrtfly deploy --remote-only'
 [build]
 builder = 'paketobuildpacks/builder:base'
 [env]
